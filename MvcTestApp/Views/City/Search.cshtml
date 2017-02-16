@@ -1,0 +1,96 @@
+﻿@model IEnumerable<MvcTestApp.Models.ViewModel.CityViewModel>
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Template/HomeTemplate.cshtml";
+}
+
+
+
+    <div id="container">
+
+       <h1>Ciudades de Puerto Rico y Republica dominicana</h1>
+    
+
+        <div id="menu">
+
+            <ul class="nav nav-tabs">
+
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><strong>Menu de Ciudades</strong></a>
+                </div>
+                <li > @Html.ActionLink("Ver todas", "Index")</li>
+                <li class="active"> @Html.ActionLink("Busqueda", "Search")</li>
+
+
+
+            </ul>
+        </div>
+
+            <div class="col-sm-4">
+                <form method="post" action="/City/SearchCitiesInDatabase">
+
+                    <fieldset>
+                        <br /> <legend><strong>Realizar busqueda de una ciudad:</strong></legend>
+                        <label for="db"> <strong>Cual servidor desea consultar?  </strong> </label>
+                        <div class="radio">
+                            <label><input type="radio" name="dbValue" value="RD" class="active">Republica Dominicana</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="dbValue" value="PR">Puerto Rico</label>
+                        </div>
+
+
+
+                        <label for="cityName"> <strong>Inserte el nombre de la ciudad  </strong> </label>
+                        <br /><input type="text" name="cityName" /><br />
+                        <br /><input type="submit" name="btnBuscar" value="Buscar" class="btn btn-default" /><br /><br />
+                    </fieldset>
+
+                </form>
+            </div>
+            <div class="col-sm-6">
+                @if (Model != null && Model.Count() != 0)
+                {
+                    <h3>Se encontraron las siguientes coincidencias:</h3>
+                    <div class="col-sm-4">
+                        <table class="table table-stripped">
+                            <tr>
+                                <td scope="col">
+                                    <strong>Nombre de la ciudad</strong>
+
+                                </td>
+
+                                <td scope="col">
+                                    <strong> Codigo de la ciudad</strong>
+                                </td>
+
+                            </tr>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.city_code)
+                                    </td>
+
+                                </tr>
+
+
+                            }
+                        </table>
+                    </div>
+                }
+                @if (Model != null && Model.Count() == 0)
+                {
+                    <h3>No se encontraron ciudades...</h3>
+                }
+                
+            </div>
+        </div>
+
+
+
+

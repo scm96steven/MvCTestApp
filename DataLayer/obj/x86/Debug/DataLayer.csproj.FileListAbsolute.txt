@@ -1,0 +1,7 @@
+C:\Users\Steven Madaschi\documents\visual studio 2013\Projects\MvcTestApp\DataLayer\bin\x86\Debug\DataLayer.dll.config
+C:\Users\Steven Madaschi\documents\visual studio 2013\Projects\MvcTestApp\DataLayer\bin\x86\Debug\DataLayer.dll
+C:\Users\Steven Madaschi\documents\visual studio 2013\Projects\MvcTestApp\DataLayer\bin\x86\Debug\DataLayer.pdb
+C:\Users\Steven Madaschi\documents\visual studio 2013\Projects\MvcTestApp\DataLayer\bin\x86\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Steven Madaschi\documents\visual studio 2013\Projects\MvcTestApp\DataLayer\obj\x86\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\Steven Madaschi\documents\visual studio 2013\Projects\MvcTestApp\DataLayer\obj\x86\Debug\DataLayer.dll
+C:\Users\Steven Madaschi\documents\visual studio 2013\Projects\MvcTestApp\DataLayer\obj\x86\Debug\DataLayer.pdb

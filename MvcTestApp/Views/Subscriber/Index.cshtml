@@ -1,0 +1,37 @@
+﻿@model IEnumerable<MvcTestApp.Models.ViewModel.SubscriberViewModel>
+
+@{
+    ViewBag.Title = "DisplaySubscriberDetails";
+    Layout = "~/Views/Template/HomeTemplate.cshtml";
+}
+
+
+<div class="content">
+
+    <div class="col-sm-8">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr>
+                    <th>
+                        Nombre del cliente
+                    </th>
+                    <th></th>
+                </tr>
+
+                @if (Model != null)
+                {
+
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.name)
+                            </td>
+
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+</div>

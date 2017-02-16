@@ -1,0 +1,6 @@
+C:\Users\Steven Madaschi\Documents\Visual Studio 2013\Projects\MvcTestApp\DataLayer\bin\x64\Debug\DataLayer.dll.config
+C:\Users\Steven Madaschi\Documents\Visual Studio 2013\Projects\MvcTestApp\DataLayer\bin\x64\Debug\DataLayer.dll
+C:\Users\Steven Madaschi\Documents\Visual Studio 2013\Projects\MvcTestApp\DataLayer\bin\x64\Debug\DataLayer.pdb
+C:\Users\Steven Madaschi\Documents\Visual Studio 2013\Projects\MvcTestApp\DataLayer\bin\x64\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Steven Madaschi\Documents\Visual Studio 2013\Projects\MvcTestApp\DataLayer\obj\x64\Debug\DataLayer.dll
+C:\Users\Steven Madaschi\Documents\Visual Studio 2013\Projects\MvcTestApp\DataLayer\obj\x64\Debug\DataLayer.pdb
