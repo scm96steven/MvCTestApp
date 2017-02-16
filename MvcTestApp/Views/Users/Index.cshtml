@@ -74,14 +74,16 @@
                                         @Html.DisplayFor(modelItem => item.city)
 
                                     </td>
+
+                                    <!--
                                     <td>
-                                        <form name="update" method="post" action="/Users/Delete">
+                                        <form name="delete" method="post" action="/Users/Delete">
                                             @Html.Hidden("personId", item.personId)
                                             <input type="submit" value="Eliminar" class="btn btn-danger" />
                                         </form>
-                                    </td>
+                                    </td>-->
                                     <td>
-                                        <form name="delete" method="post" action="/Users/Update">
+                                        <form name="update" method="post" action="/Users/Update">
                                             @Html.Hidden("personId", item.personId)
                                             @Html.Hidden("firstName", item.firstName)
                                             @Html.Hidden("lastName", item.lastName)
