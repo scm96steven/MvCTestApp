@@ -6,16 +6,17 @@
     <title>Caribe Media</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    
     <!--<link rel="stylesheet" type="text/css" href="~/wwroot/pagestyle.css" media="screen" />-->
 
+    <link rel="shortcut icon" type="image/x-icon" href="wwroot/favicon.ico">
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -24,33 +25,34 @@
 
 
 <body>
-    <div class="container">
+    <div class="container ">
         <div class="page-header">
 
-            <img name="Logo" class="titulo" src="http://www.caribemedia.com.do/img/logo/cmi_logo.svg" alt="Imagen logo de la empresa" width="300px" height="100px" />
+            <img name="Logo" class="img-rounded" src="http://www.caribemedia.com.do/img/logo/cmi_logo.svg" alt="Imagen logo de la empresa" width="300px" height="100px" />
+           
+            <nav class="navbar navbar-inverse">
+                <div class="navbar-nav">
 
+                    <ul class="nav navbar-nav">
+
+                        <li> <a href="/"><strong>Inicio</strong></a></li>
+                        @*<li> <a href="/city"><strong>Ciudades</strong></a></li>*@
+                        <li> <a href="/users"><strong>Usuarios</strong></a></li>
+                        @*<li> <a href="/subscriber"><strong>Clientes</strong></a></li>*@
+
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-
-
-                <ul class="nav navbar-nav ">
-
-                    <li> <a href="/"><strong>Inicio</strong></a></li>
-                    @*<li> <a href="/city"><strong>Ciudades</strong></a></li>*@
-                    <li> <a href="/users"><strong>Usuarios</strong></a></li>
-                    @*<li> <a href="/subscriber"><strong>Clientes</strong></a></li>*@
-
-                </ul>
-            </div>
-        </nav>
+    
         <div>
             @RenderBody()
         </div>
         
         <div class="footer">
-            <br /><br /><br />
-            <h6>Caribe Media es una marca registrada de Caribe INC.</h6>
+            <br /><br /><br /><br /><br /><br /><br />
+            <h6 class="text-center"> <small> Caribe Media es una marca registrada de Caribe INC.<br />
+            Diseño por Steven Madaschi<br /><br /></small> </h6>
         </div>
     </div>
 </body>

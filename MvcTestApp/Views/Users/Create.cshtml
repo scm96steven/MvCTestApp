@@ -1,57 +1,53 @@
 ﻿@model MvcTestApp.Models.Models.UsersModel
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Create";
     Layout = "~/Views/Template/HomeTemplate.cshtml";
 }
 
+<div class="container-fluid">
+
+    <div class="menu">
+
+        <ul class="nav nav-tabs">
+            <div class="navbar-header">
+                <span class="navbar-brand">Usuarios</span> 
+            </div>
+
+            <li> @Html.ActionLink("Ver todos", "Index")</li>
+            <li class="active"> @Html.ActionLink("Crear usuario", "Create")</liclass>
 
 
-          <div id="content">
+        </ul>
+    </div>
 
-              <div class="menu">
+    @using (Html.BeginForm("CreateNewUser", "Users", FormMethod.Post))
+    {
+        <fieldset>
+            <legend>Inserte los datos del nuevo usuario:</legend>
+            @Html.Label("Name", "Nombre") <br />
+            @Html.TextBoxFor(m => m.firstName) <br />
 
-                  <ul class="nav nav-tabs">
-                      <div class="navbar-header">
-                          <a class="navbar-brand" href="#">Usuarios</a>
-                      </div>
+            @Html.Label("Name", "Apellido") <br />
+            @Html.TextBoxFor(m => m.lastName) <br />
 
-                      <li > @Html.ActionLink("Ver todos", "Index")</li>
-                      <li class ="active"> @Html.ActionLink("Crear usuarios", "Create")</liclass>
+            @Html.Label("Name", "Direccion") <br />
+            @Html.TextBoxFor(m => m.address) <br />
 
+            @Html.Label("Name", "Ciudad") <br />
+            @Html.TextBoxFor(m => m.city) <br />
 
-                  </ul>
-              </div>
-
-              @using (Html.BeginForm("CreateNewUser", "Users", FormMethod.Post))
-              {
-                  <fieldset>
-                      <legend>Inserte los datos del nuevo usuario:</legend>
-                      @Html.Label("Name", "Nombre") <br />
-                      @Html.TextBoxFor(m => m.firstName) <br />
-
-                      @Html.Label("Name", "Apellido") <br />
-                      @Html.TextBoxFor(m => m.lastName) <br />
-
-                      @Html.Label("Name", "Direccion") <br />
-                      @Html.TextBoxFor(m => m.address) <br />
-
-                      @Html.Label("Name", "Ciudad") <br />
-                      @Html.TextBoxFor(m => m.city) <br />
-
-                      <br /><input type="submit" class="btn btn-success" name="btnCrear" value="Crear Usuario" /><br /><br />
+            <br /><input type="submit" class="btn btn-success" name="btnCrear" value="Crear Usuario" /><br /><br />
 
 
 
 
-                  </fieldset>
+        </fieldset>
 
 
-              }
+    }
 
 
 
-          </div>
-
-
+</div>
 

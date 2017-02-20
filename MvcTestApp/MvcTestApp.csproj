@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -126,7 +127,27 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Bootstrap\css\bootstrap.css" />
+    <Content Include="Bootstrap\css\bootstrap.min.css" />
+    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Bootstrap\Scripts\bootstrap.js" />
+    <Content Include="Bootstrap\Scripts\bootstrap.min.js" />
+    <None Include="Bootstrap\Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Bootstrap\Scripts\jquery-1.9.1.js" />
+    <Content Include="Bootstrap\Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Bootstrap\Scripts\npm.js" />
     <Content Include="Global.asax" />
+    <Content Include="Bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="Bootstrap\css\bootstrap.css.map" />
+    <Content Include="Bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Bootstrap\Scripts\jquery-1.9.1.min.map" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -136,6 +157,7 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="wwroot\pagestyle.css" />
+    <Content Include="Views\Users\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -162,7 +184,7 @@
     <Content Include="Views\Users\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Create2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Template\HomeTemplate.cshtml" />
