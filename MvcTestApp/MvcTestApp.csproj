@@ -159,6 +159,7 @@
     <Content Include="wwroot\favicon.ico" />
     <Content Include="wwroot\pagestyle.css" />
     <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Home\Chiquitica.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
