@@ -29,6 +29,21 @@ namespace MvcTestApp
 
             return View();
         }
+        public ActionResult hsjs()
+        {
+
+
+
+            return View();
+        }
+
+        public ActionResult lol()
+        {
+
+
+
+            return View();
+        }
 
     }
 }

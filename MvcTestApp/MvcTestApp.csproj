@@ -21,6 +21,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -161,6 +162,8 @@
     <Content Include="wwroot\pagestyle.css" />
     <Content Include="Views\Users\Create.cshtml" />
     <Content Include="Views\Home\Chiquitica.cshtml" />
+    <Content Include="Views\Home\lol.cshtml" />
+    <Content Include="Views\Home\hsjs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

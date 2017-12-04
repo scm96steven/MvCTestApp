@@ -1,1 +1,7 @@
 *.suo
+*.config
+.vs/MvcTestApp/v15/.suo
+*.cache
+DataLayer/obj/x86/Debug/DataLayer.csprojResolveAssemblyReference.cache
+*.dll
+DataLayer/obj/x86/Debug/DataLayer.pdb
